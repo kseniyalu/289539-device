@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/index-logo.svg" width="164" height="36" alt="Логотип онлайн-магазина Девайс">
+          <img src="img/idex-logo.svg" width="164" height="36" alt="Логотип онлайн-магазина Девайс">
         </a>
         <ul class="user-navigation">
           <li class="search">Поиск по сайту</li>
@@ -38,7 +38,7 @@
       <section class="slider">
         <section class="slider slider-monopod">
           <h2 class="visually-hidden">Слайд о моноподах</h2>
-          <img src="img/monopod.png" alt="Монопод">
+          <img src="img/slider-1-png.jpg" width="384" height="486" alt="Монопод">
           <h3>Делай селфи, как Бен Стиллер! </h3>
           <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм. </p>
           <button type="button" name="button" href="monopod.html">Подробнее</button>
@@ -58,7 +58,7 @@
 
         <section class="slider slider-band">
         <h2 class="visually-hidden">Слайд об умных браслетах</h2>
-        <img src="img/band.png" alt="Умный браслет">
+        <img src="img/slider-2-png.jpg" width="345" height="485" alt="Умный браслет">
         <h3>Худеем правильно</h3>
         <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
         <button type="button" name="button" href="band.html">Подробнее</button>
@@ -74,7 +74,7 @@
 
         <section class="slider slider-copter">
           <h2 class="visually-hidden">Слайд о квадрокоптерах</h2>
-          <img src="img/copter.png" alt="Квадрокоптер">
+          <img src="img/slider-3-png.jpg" width="526" height="334" alt="Квадрокоптер">
           <h3>Порхает как бабочка, жалит как пчела!</h3>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру. </p>
           <button type="button" name="button" href="copter.html">Подробнее</button>
@@ -124,16 +124,16 @@
       <section class="logotypes">
         <h2 class="visually-hidden">Логотипы партнеров</h2>
         <a href="http://dji.com">
-          <img src="img/dj-logo.svg" width="260" height="100" alt="Логотип Dji">
+          <img src="img/logo-1-jpg.jpg" width="260" height="100" alt="Логотип Dji">
         </a>
         <a href="http://sp-gadgets.com">
-          <img src="img/sp-gadgets-logo.svg" width="260" height="100" alt="Логотип SP Gadgets">
+          <img src="img/logo-2-jpg.jpg" width="260" height="100" alt="Логотип SP Gadgets">
         </a>
         <a href="http://gopro.com">
-          <img src="img/gopro-logo.svg" width="260" height="100" alt="Логотип Gopro">
+          <img src="img/logo-3-jpg.jpg" width="260" height="100" alt="Логотип Gopro">
         </a>
         <a href="http://vive.com">
-          <img src="img/vive-logo.svg" width="260" height="100" alt="Логотип Vive">
+          <img src="img/logo-4-jpg.jpg" width="260" height="100" alt="Логотип Vive">
         </a>
       </section>
 
@@ -151,14 +151,14 @@
       <section class="about">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.  </p>
-        <img src="img/map.jpg" alt="Расположение магазина на карте">
+        <img src="img/map-jpg.jpg" alt="Расположение магазина на карте">
         <button type="button" name="button" href="map.html">Напишите нам</button>
       </section>
     </main>
 
     <footer class="main-footer">
       <a class="main-footer-logo">
-        <img src="img/index-footer-logo.svg" width="164" height="36" alt="Логотип онлайн-магазина Девайс">
+        <img src="img/logo.svg" width="164" height="36" alt="Логотип онлайн-магазина Девайс">
       </a>
       <ul class="user-footer-navigation">
         <li class="login-link">Войти</li>
@@ -195,12 +195,28 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <span class="modal-close">x</span>
+      <img src="img/map-big.jpg" width="1000" height="599" alt="Расположение на карте">
+      <button type="button" name="button">x</button>
     </section>
 
     <section class="modal modal-contact">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <span class="modal-close">x</span>
+      <form class="contact" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail:</label>
+          <input id="user-email" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="user-message">Текст письма:</label>
+          <input id="user-message" type="text" name="message" placeholder="В свободной форме">
+        </p>
+        <button type="submit" name="button">Отправить</button>
+        <button type="button" name="button">x</button>
+      </form>
     </section>
 
   </body>
