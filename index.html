@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -12,9 +14,9 @@
         </a>
         <ul class="user-navigation">
           <li class="search">Поиск по сайту</li>
-          <li class="login-link"><a href="logn.html">Войти</a></li>
-          <li class="compare-link"><a href="comparation.html">Сравнить</a></li>
-          <li class="cart-link"><a href="cart.html">Корзна</a></li>
+          <li><a class="login-link" href="logn.html">Войти</a></li>
+          <li><a href="comparation.html">Сравнить</a></li>
+          <li><a href="cart.html">Корзна</a></li>
         </ul>
         <ul class="site-navigation">
           <li class="catalogue">Каталог</a></li>
@@ -40,18 +42,23 @@
           <h2 class="visually-hidden">Слайд о моноподах</h2>
           <img src="img/slider-1-png.jpg" width="384" height="486" alt="Монопод">
           <h3>Делай селфи, как Бен Стиллер! </h3>
-          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм. </p>
+          <p>Самая длинная палка для селфи доступна в нашем магазине.  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм. </p>
           <button type="button" name="button" href="monopod.html">Подробнее</button>
+          <ul class="slides-switches">
+            <li class="slide-radio slide-radio-active"></li>
+            <li class="slide-radio"></li>
+            <li class="slide-radio"></li>
+          </ul>
           <table>
             <tr>
-              <td>8,5 м</td>
-              <td>5 кг</td>
-              <td>Карбон</td>
+              <td class="table-meaning">8,5 м</td>
+              <td class="table-meaning">5 кг</td>
+              <td class="table-meaning">Карбон</td>
             </tr>
             <tr>
-              <td>Длина палки</td>
-              <td>Вес палки</td>
-              <td>Материал</td>
+              <td class="table-parameter">Длина палки</td>
+              <td class="table-parameter">Вес палки</td>
+              <td class="table-parameter">Материал</td>
             </tr>
           </table>
         </section>
@@ -62,12 +69,17 @@
         <h3>Худеем правильно</h3>
         <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
         <button type="button" name="button" href="band.html">Подробнее</button>
+        <ul class="slides-switches">
+          <li class="slide-radio-active"></li>
+          <li class="slide-radio"></li>
+          <li class="slide-radio"></li>
+        </ul>
         <table>
           <tr>
-            <td>48 часов</td>
+            <td class="table-meaning">48 часов</td>
           </tr>
           <tr>
-            <td>Без подзарядки</td>
+            <td class="table-parameter">Без подзарядки</td>
           </tr>
         </table>
         </section>
@@ -78,14 +90,19 @@
           <h3>Порхает как бабочка, жалит как пчела!</h3>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру. </p>
           <button type="button" name="button" href="copter.html">Подробнее</button>
+          <ul class="slides-switches">
+            <li class="slide-radio-active"></li>
+            <li class="slide-radio"></li>
+            <li class="slide-radio"></li>
+          </ul>
           <table>
             <tr>
-              <td>800 м</td>
-              <td>50 м</td>
+              <td class="table-meaning">800 м</td>
+              <td class="table-meaning">50 м</td>
             </tr>
             <tr>
-              <td>Дальность полета</td>
-              <td>Радиус поражения</td>
+              <td class="table-parameter">Дальность полета</td>
+              <td class="table-parameter">Радиус поражения</td>
             </tr>
           </table>
         </section>
@@ -105,6 +122,17 @@
 
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
+        <ul class="button-list">
+          <li>
+            <button type="button" name="button" href="copter.html">Доставка</button>
+          </li>
+          <li>
+            <button type="button" name="button" href="copter.html">Гарантия</button>
+          </li>
+          <li>
+            <button type="button" name="button" href="copter.html">Кредит</button>
+          </li>
+        </ul>
         <ul class="services-list">
           <li class="services-item">
             <h3>Доставка</h3>
@@ -121,20 +149,14 @@
         </ul>
       </section>
 
-      <section class="logotypes">
-        <h2 class="visually-hidden">Логотипы партнеров</h2>
-        <a href="http://dji.com">
-          <img src="img/logo-1-jpg.jpg" width="260" height="100" alt="Логотип Dji">
-        </a>
-        <a href="http://sp-gadgets.com">
-          <img src="img/logo-2-jpg.jpg" width="260" height="100" alt="Логотип SP Gadgets">
-        </a>
-        <a href="http://gopro.com">
-          <img src="img/logo-3-jpg.jpg" width="260" height="100" alt="Логотип Gopro">
-        </a>
-        <a href="http://vive.com">
-          <img src="img/logo-4-jpg.jpg" width="260" height="100" alt="Логотип Vive">
-        </a>
+      <section class="brands">
+        <h2 class="visually-hidden">Перечень брэндов</h2>
+        <ul class="brands-list">
+          <li><img src="img/logo-dji.jpg" width="260" height="100" alt="Логотип Dji"></li>
+          <li><img src="img/logo-sp-gadgets.jpg" width="260" height="100" alt="Логотип SP Gadget"></li>
+          <li><img src="img/logo-gopro.jpg" width="260" height="100" alt="Логотип Gopro"></li>
+          <li><img src="img/logo-vive.jpg" width="260" height="100" alt="Логотип Vive"></li>
+        </ul>
       </section>
 
       <section class="about">
@@ -196,7 +218,7 @@
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img src="img/map-big.jpg" width="1000" height="599" alt="Расположение на карте">
-      <button type="button" name="button">x</button>
+      <button class="modal-close" type="button" name="button">Закрыть</button>
     </section>
 
     <section class="modal modal-contact">
@@ -204,18 +226,18 @@
       <form class="contact" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="user-name">Ваше имя:</label>
-          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+          <input id="user-name" type="text" name="name" value="" placeholder="Имя Фамилия">
         </p>
         <p>
           <label for="user-email">Ваш e-mail:</label>
-          <input id="user-email" type="text" name="email" placeholder="email@example.com">
+          <input id="user-email" type="text" name="email" value="" placeholder="email@example.com">
         </p>
         <p>
           <label for="user-message">Текст письма:</label>
-          <input id="user-message" type="text" name="message" placeholder="В свободной форме">
+          <input id="user-message" type="text" name="message" value="" placeholder="В свободной форме">
         </p>
         <button type="submit" name="button">Отправить</button>
-        <button type="button" name="button">x</button>
+        <button class="modal-close" type="button" name="button">Закрыть</button>
       </form>
     </section>
 
