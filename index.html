@@ -7,16 +7,16 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="header">
       <nav class="main-navigation">
         <a class="main-header-logo">
           <img src="img/idex-logo.svg" width="164" height="36" alt="Логотип онлайн-магазина Девайс">
         </a>
         <ul class="user-navigation">
           <li class="search">Поиск по сайту</li>
-          <li><a class="login-link" href="logn.html">Войти</a></li>
-          <li><a href="comparation.html">Сравнить</a></li>
-          <li><a href="cart.html">Корзна</a></li>
+          <li class="login"><a class="login-link" href="logn.html">Войти</a></li>
+          <li class="comparation"><a href="comparation.html">Сравнить</a></li>
+          <li class="cart"><a href="cart.html">Корзна</a></li>
         </ul>
         <ul class="site-navigation">
           <li class="catalogue">Каталог</a></li>
@@ -38,16 +38,16 @@
       <h1 class="visually-hidden">Онлайн-магазин техники Девайс</h1>
 
       <section class="slider">
-        <section class="slider slider-monopod">
+        <section class="slider-monopod">
           <h2 class="visually-hidden">Слайд о моноподах</h2>
           <img src="img/slider-1-png.jpg" width="384" height="486" alt="Монопод">
           <h3>Делай селфи, как Бен Стиллер! </h3>
           <p>Самая длинная палка для селфи доступна в нашем магазине.  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм. </p>
-          <button type="button" name="button" href="monopod.html">Подробнее</button>
+          <a class="more" href="monopod.html">Подробнее</a>
           <ul class="slides-switches">
-            <li class="slide-radio slide-radio-active"></li>
-            <li class="slide-radio"></li>
-            <li class="slide-radio"></li>
+            <li class="radio-active"></li>
+            <li class="radio"></li>
+            <li class="radio"></li>
           </ul>
           <table>
             <tr>
@@ -63,16 +63,16 @@
           </table>
         </section>
 
-        <section class="slider slider-band">
+        <section class="slider-band">
         <h2 class="visually-hidden">Слайд об умных браслетах</h2>
         <img src="img/slider-2-png.jpg" width="345" height="485" alt="Умный браслет">
         <h3>Худеем правильно</h3>
         <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-        <button type="button" name="button" href="band.html">Подробнее</button>
+        <a class="more" href="band.html">Подробнее</a>
         <ul class="slides-switches">
-          <li class="slide-radio-active"></li>
-          <li class="slide-radio"></li>
-          <li class="slide-radio"></li>
+          <li class="radio"></li>
+          <li class="radio-active"></li>
+          <li class="radio"></li>
         </ul>
         <table>
           <tr>
@@ -84,16 +84,16 @@
         </table>
         </section>
 
-        <section class="slider slider-copter">
+        <section class="slider-copter">
           <h2 class="visually-hidden">Слайд о квадрокоптерах</h2>
           <img src="img/slider-3-png.jpg" width="526" height="334" alt="Квадрокоптер">
-          <h3>Порхает как бабочка, жалит как пчела!</h3>
+          <h3>Пархает как бабочка, жалит как пчела!</h3>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру. </p>
-          <button type="button" name="button" href="copter.html">Подробнее</button>
+          <a class="more" href="copter.html">Подробнее</a>
           <ul class="slides-switches">
-            <li class="slide-radio-active"></li>
-            <li class="slide-radio"></li>
-            <li class="slide-radio"></li>
+            <li class="radio"></li>
+            <li class="radio"></li>
+            <li class="radio-active"></li>
           </ul>
           <table>
             <tr>
@@ -163,54 +163,56 @@
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.  Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:  </p>
         <ul class="delivery-partners">
-          <li class="delivery-partners-item">Деловые линии</li>
-          <li class="delivery-partners-item">Автотрейдинг</li>
-          <li class="delivery-partners-item">ЖелДорЭкспедиция</li>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
         </ul>
-        <button type="button" name="button" href="about.html">Подробнее о нас</button>
+        <a class="more" href="about.html">Подробнее о нас</a>
       </section>
 
       <section class="about">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.  </p>
         <img src="img/map-jpg.jpg" alt="Расположение магазина на карте">
-        <button type="button" name="button" href="map.html">Напишите нам</button>
+        <a class="more" href="email.html">Напишите нам</a>
       </section>
     </main>
 
-    <footer class="main-footer">
-      <a class="main-footer-logo">
-        <img src="img/logo.svg" width="164" height="36" alt="Логотип онлайн-магазина Девайс">
-      </a>
-      <ul class="user-footer-navigation">
-        <li class="login-link"><a href="logn.html">Войти</a></li>
-        <li class="compare-link"><a href="comparation.html">Сравнить</a></li>
-        <li class="cart-link"><a href="cart.html">Корзна</a></li>
-      </ul>
+    <footer class="footer">
+      <nav class="footer-navigation">
+        <a class="footer-logo">
+          <img src="img/logo.svg" width="164" height="36" alt="Логотип онлайн-магазина Девайс">
+        </a>
+        <ul class="user-footer-navigation">
+          <li class="footer-login"><a href="logn.html">Войти</a></li>
+          <li class="footer-comparation"><a href="comparation.html">Сравнить</a></li>
+          <li class="footer-cart"><a href="cart.html">Корзна</a></li>
+        </ul>
+        <ul class="site-footer-navigation">
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="guarantee.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
       <p class="footer-contacts">
         г. Москва, ул. Строителей, 15 
       </p>
-      <ul class="site-navigation">
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="guarantee.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
       <p class="footer-contacts">
         Тел.: +7 (495) 495-95-95
       </p>
       <div class="footer-social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+        <ul class="social-navigation">
+          <li class="fb"><a href="#"><img src="img/fb.svg" alt="Facebook"></a></li>
+          <li class="inst"><a href="#"><img src="img/instagram.svg" alt="Instagram"></a></li>
+          <li class="twit"><a href="#"><img src="img/twitter.svg" alt="Twitter"></a></li>
         </ul>
       </div>
 
       <div class="footer-copyright">
         <h2 class="visually-hidden">Разработано</h2>
         <a href="http://htmlacademy.ru">
-          <img src="img/htmlacademy.svg" width="27" height="25" alt="Логотип Html Academy">
+          <img src="img/logo-html.svg" width="27" height="25" alt="Логотип Html Academy">
         </a>
       </div>
     </footer>
